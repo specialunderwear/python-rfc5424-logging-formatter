@@ -52,7 +52,7 @@ The '- -' section is the "msg ID" and "Structured-Data" Elements,
 respectively
 
 
-Example useage of the formatter
+Example usage of the formatter
 -------------------------------
 
 ```python
@@ -61,7 +61,7 @@ Example useage of the formatter
 
     logger = logging.getLogger('rfc5424_example')
     handler = logging.handlers.SysLogHandler(address=<Address of SysLogServer>)
-    format = ''%(isotime)s %(hostname)s %(name)s %(process)d - - %(message)s''
+    format = '%(isotime)s %(hostname)s %(name)s %(process)d - - %(message)s'
     formatter = RFC5424Syslog(format)
 
     handler.setFormatter(formatter)
@@ -78,7 +78,7 @@ License
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
+    the Free Software Foundation, either version 2 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
