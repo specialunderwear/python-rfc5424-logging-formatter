@@ -51,7 +51,7 @@ class RFC5424Formatter(logging.formatter):
    Stuctured Data Example:
         [exampleSDID@32473 iut="3" eventSource="Application" eventID="1011"]
     '''
-    def __init__(self. *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         self._tz_fix = re.compile(r'([+-]\d{2})(\d{2})$')
         super(RFC5424Formatter, self).__init__(*args, **kwargs)
 
