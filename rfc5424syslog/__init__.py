@@ -5,7 +5,7 @@ import datetime
 import re
 
 
-class RFC5424Formatter(logging.formatter):
+class RFC5424Formatter(logging.Formatter):
     '''
     A derived formatter than allows for isotime specification
     for full RFC5424 compliancy (with corrected TZ format)
